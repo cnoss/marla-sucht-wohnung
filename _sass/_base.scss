@@ -103,13 +103,13 @@ ul.list{
   li{
     display: block;
     margin-bottom: $s;
-    margin-left: $m;
+    margin-left: $l;
 
     &::before{
-      content:"-";
-      margin-left: -$m;
-      padding-right: $s;
-      color: $seperator-color;
+      content:">";
+      margin-left: -$l;
+      padding-right: $m;
+      color: $interaction-color;
       font-weight: $fw-bold;
     }
   }

@@ -14,3 +14,12 @@ slideshows.forEach(slideshow => {
   initSlideshow(slideshow);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const mailElement = document.querySelector("[data-info]");
+  const adress = mailElement.dataset.info.replace(/<!--.*?-->/g, "");
+  
+  mailElement.innerHTML = adress;
+  mailElement.addEventListener("click", () => {
+    window.location.href = `mailto:${adress}?subject=Marla sucht eine Bleibe`;
+  });
+});

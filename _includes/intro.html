@@ -1,18 +1,12 @@
 <div class="section herotext">
-<p><a href="https://instagram.com/m.noss?igshid=MzRlODBiNWFlZA==">Ich</a> starte im kommenden Wintersemester mein Studium in Berlin. Juchu. Daher brauche ich bis spätestens Oktober eine Bleibe, entweder in einer WG oder eine Wohnung, so dass ich mit <a href="https://instagram.com/tessaklbg?igshid=MzRlODBiNWFlZA==">Tessa</a> eine WG aufmachen kann.</p>
+<p><a href="https://instagram.com/m.noss?igshid=MzRlODBiNWFlZA==">Ich</a> starte im kommenden Wintersemester mein Studium in Berlin. Yeah. Daher brauche ich bis spätestens Oktober eine Bleibe,</p>
 
-{% assign prefix = "haus-" %}
-<ul class="gallery" id="{{prefix}}links">
-{% assign image_files = site.static_files | where: "image", true %}
-{% for image in image_files %}
-  {% if image.name contains prefix %}
-    <li class="gallery__item is16by9">
-      <a href="{{ site.baseurl }}{{ image.path | replace: "small", "large" }}" title="{{ image.name }}">
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
-      </a>
-    </li>
-    {% endif %}
-  {% endfor %}
+<ul class="list">
+  <li>entweder in einer WG (bis ca. 500€)</li>
+  <li>oder einer Wohnung (bis ca. 1000€), so dass ich mit <a href="https://instagram.com/tessaklbg?igshid=MzRlODBiNWFlZA==">Tessa</a> eine WG aufmachen kann</li>
 </ul>
+
+<p>Falls jemand was passendes hat oder jemanden kennt oder was hört oder Ideen hat, wo ich oder wir unterkommen könnten: bitte bitte meldet euch <a href="#" data-info="mar<!-- hehe@moeep -->la.<!-- hehe@moeep -->alma.<!--huhu-->noss<!---no-->@gm<!-- hehe@moeep -->ail.com"></a></p>
+
 
 </div>
