@@ -1,0 +1,13 @@
+basic_settings:
+  site_title: Marla sucht
+  site_tagline: eine Bleibe in Berlin
+  favicon_image: /images/favicon.ico
+  description: Das Marlakind fliegt aus und sucht ein Dach über dem Kopf im schönen Berlin
+
+
+advanced_settings:
+  ajax_loading: true
+  analytics_code: ""
+  custom_styles: ""
+  header_js: ""
+  footer_js: ""

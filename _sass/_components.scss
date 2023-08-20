@@ -1,0 +1,239 @@
+
+@media only screen and (min-width: $vp-medium) {
+  .header,
+  .page,
+  .footer {
+    // max-width: $vp-xlarge;
+  }
+
+  p{
+    max-width: $vp-medium;
+  }
+}
+
+
+// Page
+// ------------------------------------------------------------------------- //
+.page{
+  padding-bottom: $xl;
+}
+
+// Header
+// ------------------------------------------------------------------------- //
+.header {
+  padding: $s;
+  @media only screen and (min-width: $vp-medium) {
+    padding: $l;
+  }
+}
+
+
+// Section
+// ------------------------------------------------------------------------- //
+.section {
+  padding: $s;
+
+  @media only screen and (min-width: $vp-medium) {
+    padding: $l;
+  }
+}
+
+
+// Contact
+// ------------------------------------------------------------------------- //
+
+.contact {
+
+}
+
+
+
+
+// Toc
+// ------------------------------------------------------------------------- //
+.toc{
+
+  &__item{
+    padding-top: $xs;
+    padding-bottom: $xs;
+    border-top: solid 1px $seperator-color;
+    max-width: $vp-medium;
+
+    &.with-seperator{
+      margin-top: $s;
+      border: none;
+    }
+  }
+}
+
+
+// Footer
+// ------------------------------------------------------------------------- //
+
+.footer {
+  background-color: $dark;
+  color: $lighter;
+  padding: $s;
+  padding-bottom: $xl;
+
+  @media only screen and (min-width: $vp-medium) {
+    padding: $l;
+  }
+
+  a{
+    color: $lighter;
+  }
+
+}
+
+// Image Block
+// ------------------------------------------------------------------------- //
+
+
+
+// Content Block
+// ------------------------------------------------------------------------- //
+
+
+
+// Canvas
+// ------------------------------------------------------------------------- //
+
+
+#canvas{
+  width: 100vw;
+  height: 600px;
+}
+
+
+// Gallery
+// ------------------------------------------------------------------------- //
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: $m;
+  column-gap: $m;
+  padding-top: $s;
+  margin-bottom: $l;
+
+  &__item{
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      padding-bottom: 100%;
+      display: block;
+    }
+    &.is16by9::before {
+      padding-bottom: 56.25%;
+    }
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__item-small{
+    max-width: 300px;
+  }
+}
+
+
+// Video Gallery
+// ------------------------------------------------------------------------- //
+
+.video-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: $m;
+  column-gap: $m;
+  padding-top: $s;
+  margin-bottom: $l;
+
+  &__item{
+    position: relative;
+    overflow: hidden;
+
+    iframe{
+      aspect-ratio: 16/9;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+// Herotext
+// ------------------------------------------------------------------------- //
+.herotext {
+  font-size: $m;
+  font-weight: $fw-medium;
+  line-height: $lh-default;
+
+  @media only screen and (min-width: $vp-medium) {
+    font-size: $l;
+    font-weight: $fw-normal;
+  }
+}
+
+
+// Tabelle
+// ------------------------------------------------------------------------- //
+table {
+  table-layout:fixed;
+  margin-bottom: $xl;
+  width: 100%;
+
+  th, td{
+    text-align: left;
+    font-size: $m;
+    padding: $xxs;
+    padding-right: $l;
+    border-top: solid 1px $seperator-color;
+    line-height: $lh-default;
+  }
+
+  td{
+    font-weight: $fw-medium;
+    width: 240px;
+    text-align: right;
+  }
+
+  th{
+    width: 80%;
+    font-weight: $fw-light;
+  }
+
+  tfoot{
+    tr{
+      th, td{
+        font-weight: $fw-bold;
+      }
+    }
+  }
+
+  &.text{
+    th{
+      width: 50%;
+    }
+    td{
+      text-align: left;
+    }
+  }
+
+  @media only screen and (min-width: $vp-small) {
+    width: 80%;
+  }
+
+  @media only screen and (min-width: $vp-large) {
+    width: 50%;
+  }
+
+}

@@ -1,0 +1,32 @@
+site: Index Jekyll Theme
+
+url: https://index.jekyllthemes.io
+baseurl: 
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "images/small"
+    values:
+      image: true
+
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
+baseurl: "/marla-sucht-bleibe"
+
+## plugins:
+#  - jekyll-paginate
+#  - jekyll-sitemap
+
+  

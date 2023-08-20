@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image | relative_url }}">
+	<title>{{ site.data.settings.basic_settings.site_title }} // {{ site.data.settings.basic_settings.site_tagline }}</title>
+	<meta name="description" content="{{ site.data.settings.basic_settings.description | strip_html | xml_escape }}">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}">
+	<meta name="twitter:description" content="{{ site.data.settings.basic_settings.description | strip_html | xml_escape }}">
+	<meta name="twitter:image:src" content="{{ site.data.settings.basic_settings.featured_image | absolute_url }}">
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:title" content="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}" />
+	<meta property="og:description" content="{{ site.data.settings.basic_settings.description | strip_html | xml_escape }}" />
+	<meta property="og:image" content="{{ site.data.settings.basic_settings.featured_image | absolute_url }}" />
+
+	<!-- Styles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css" />
+</head>
+
+<body>
+
+
+	<main class="page {{page.class}}">
+  {{content}}
+	</main>
+
+
+
+</body>
+</html>

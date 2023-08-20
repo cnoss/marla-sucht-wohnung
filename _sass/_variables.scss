@@ -1,0 +1,92 @@
+
+/* Sizes
+Using Lucas Numbers 1, 3, 4, 7, 11, 18, 29, 47, 76, 
+---------------------------------------------------------------------------- */
+$faktor: 1.1;
+$xxs: 4px * $faktor;
+$xs: 7px * $faktor;
+$s: 11px * $faktor;
+$m: 18px * $faktor;
+$l: 29px * $faktor;
+$xl: 47px * $faktor;
+
+
+/* Font Properties
+---------------------------------------------------------------------------- */
+$font-family-serif: PTserif;
+$font-family-sans: Barlow;
+$base-font-size: $m;
+$font-icons: 'Material Icons';
+
+/* Font Weights
+---------------------------------------------------------------------------- */
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 600;
+
+
+/* Line Heights
+---------------------------------------------------------------------------- */
+$lh-tight: 100%;
+$lh-default: 130%;
+$lh-loose: 150%;
+
+
+
+/* Opacity
+---------------------------------------------------------------------------- */
+$op-medium:0.6;
+
+
+/* Base Colors
+---------------------------------------------------------------------------- */
+:root{
+  --tileColor: #8C775E;
+}
+
+$steingrau: hsla(42, 6%, 55%, 0.6);
+$lichtgrau: hsla(100, 3%, 77%, 1);
+$hellgrau: #BBBAB7;
+$blaugrau: #82899A;
+$beige: #B18C69;
+$light: #E6DED1;
+$lighter: #fff;
+$dark: #57544F;
+$darker: #000;
+
+
+/* Functional Colors
+---------------------------------------------------------------------------- */
+$interaction-color: #F24968;
+$decoration-color: $beige;
+$text-color: $darker;
+$headline-color: $dark;
+$headline-color-light: $steingrau;
+$aside-color: $lichtgrau;
+$border-color: $lichtgrau;
+$seperator-color: $light;
+$background-color: $steingrau;
+
+
+/* Transitions
+---------------------------------------------------------------------------- */
+$tr-fast: 0.2s;
+$tr-medium: 0.6s;
+$tr-slow: 1s;
+
+/* Misc
+---------------------------------------------------------------------------- */
+$bw: 2px;
+$text-shadow: 0 0 20px rgba(0,0,0,0.9);
+$max-width-content: 50rem;
+$aside-width: 20rem;
+$border-width: 2px;
+
+
+/* Viewports
+---------------------------------------------------------------------------- */
+$vp-small: 688px;
+$vp-medium: 800px;
+$vp-large: 1100px;
+$vp-xlarge: 1400px;

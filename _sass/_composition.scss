@@ -1,0 +1,17 @@
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  & > * {
+    flex-grow: 0;
+  }
+}
+
+main{
+  flex-grow: 1;
+}

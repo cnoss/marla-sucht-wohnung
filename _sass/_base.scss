@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: $font-family-sans;
+  font-size: $base-font-size;
+  line-height: $lh-default;
+  font-weight: $fw-light; 
+  hyphens: auto;
+  color:$text-color;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color:$background-color;
+}
+
+blockquote{
+  font-family: $font-family-serif;
+  color: $headline-color;
+
+  &:before{
+    content: "«";
+    padding-right: 0.1em;
+  }
+
+  &:after{
+    content: "»";
+    padding-left: 0.1em;
+  }
+}
+
+
+h1, h2, h3, h4{
+  line-height: $lh-tight;
+  font-weight: $fw-bold;
+  color: $headline-color;
+  hyphens: none;
+}
+
+h2{
+  font-weight: $fw-medium;
+}
+
+h3{
+  font-weight: $fw-bold;
+}
+
+h1, h2, h3, h4, p, blockquote{
+  margin-bottom: $m;
+}
+
+h1{
+  font-size: $l;
+  font-weight: $fw-bold;
+  @media only screen and (min-width: $vp-medium) {
+    font-size: $xl;
+    font-weight: $fw-normal;
+  }
+}
+
+h2{
+  font-size: $l;
+  font-weight: $fw-medium;
+  @media only screen and (min-width: $vp-medium) {
+    font-size: $l;
+    font-weight: $fw-normal;
+  }
+}
+
+h3{
+  font-size: $m;
+}
+
+
+
+p, figcaption{
+  margin-bottom: $xs;
+}
+
+figcaption{
+  font-size: $base-font-size;
+}
+
+p + h2{
+  margin-top: $l;
+}
+
+p + h3{
+  margin-top: $l;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  color: $interaction-color;
+}
+
+ul.list{
+  li{
+    display: block;
+    margin-bottom: $s;
+    margin-left: $m;
+
+    &::before{
+      content:"-";
+      margin-left: -$m;
+      padding-right: $s;
+      color: $seperator-color;
+      font-weight: $fw-bold;
+    }
+  }
+}
+
+dl{
+  margin-bottom: $l;
+
+  dt{
+    font-weight: $fw-medium;
+    display: block;
+    float: left;
+    margin-right: $xs;
+    &:after{
+      content: ":";
+    }
+  }
+
+  dd{
+    display: block;
+    margin-bottom: $xs;;
+  }
+}
+
+.title{
+  font-weight: $fw-bold;
+  @media only screen and (min-width: $vp-medium) {
+    font-weight: $fw-normal;
+  }
+}
+
+.subtitle{
+  font-weight: $fw-medium;
+  margin-top: $s * -1;
+  @media only screen and (min-width: $vp-medium) {
+    font-weight: $fw-normal;
+  }
+}
+
+strong{
+  font-weight: $fw-medium;
+}
+
+a{
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: $fw-medium;
+  &.extern::before{
+    @extend .icon;
+    content: "open_in_new";
+    color: $interaction-color;
+  }
+
+  &:hover{
+    background-color: $decoration-color;
+    color: $lighter;
+  }
+}
