@@ -23,7 +23,7 @@ kramdown:
 sass:
   style: compressed
 
-baseurl: "/marla-sucht-bleibe"
+baseurl: "/marla-sucht-wohnung"
 
 ## plugins:
 #  - jekyll-paginate
