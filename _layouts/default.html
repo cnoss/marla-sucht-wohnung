@@ -13,12 +13,13 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{{ site.data.settings.basic_settings.site_title }} {{ site.data.settings.basic_settings.site_tagline }}">
 	<meta name="twitter:description" content="{{ site.data.settings.basic_settings.description | strip_html | xml_escape }}">
-	<meta name="twitter:image:src" content="{{ site.data.settings.basic_settings.featured_image | absolute_url }}">
+	<meta name="twitter:image:src" content="{{ site.data.settings.basic_settings.featured_image | relative_url }}">
 
 	<!-- Facebook OpenGraph -->
 	<meta property="og:title" content="{{ site.data.settings.basic_settings.site_title }} {{ site.data.settings.basic_settings.site_tagline }}" />
+	<meta property="og:type" content="article" />
 	<meta property="og:description" content="{{ site.data.settings.basic_settings.description | strip_html | xml_escape }}" />
-	<meta property="og:image" content="{{ site.data.settings.basic_settings.featured_image | absolute_url }}" />
+	<meta property="og:image" content="{{ site.data.settings.basic_settings.featured_image | relative_url }}" />
 
 	<!-- Styles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
